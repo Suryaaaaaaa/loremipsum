@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1> Hallo <strong> Zahraaa </strong> </h1> 
+        <img src="zahraaa.jpg" alt="Zahra cantik.img" style= "width:400px;height:400px;">
+        <p> Saya <strong> Surya Alamsyah KJ </strong> meminta maaf kalo <strong> Nurul Zahra Zahirah </strong> ngambek</p> 
+        <p> Dah gitu aja aku ga pande ngomong </p>
+        <button id='btn_maafin' onclick='alert("yeaay makasiii <3")'>maafin</button>
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>gamau</button>
+        <br>
+        <a href="hyperlink.html"> kembali ke hyperlink </a>
+    </body>
+    <script>
+        function gamau(id){
+            var maafin = document.getElementById('btn_maafin');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+maafin.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
